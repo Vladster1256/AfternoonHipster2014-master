@@ -13,27 +13,38 @@ public class HipsterAppController
 	private Hipster selfHipster;
 	private String [] myAlbums;
 	
+	/**
+	 * This is the method that we use to delcare variables equal to the variables in the delcaration
+	 */
 	public HipsterAppController()
 	{
 		
 		selfHipster = new Hipster("Vladster", 17);
 		buildAlbumArray();
+		
 		baseFrame = new HipsterFrame(this);
 	}
 	
+	/**
+	 * This is the method that we call when we start the project
+	 */
 	public void start()
 	{
-		selfHipster.setHipsterAlbums(myAlbums);
+		
 		
 	}
 	
+	/**
+	 * This is our arraylist that we assign 
+	 */
 	private void buildAlbumArray()
 	{
 		String [] myAlbums = new String[4];
 		myAlbums[0] = "Queen: not hipster";
-		myAlbums[1] = "MDK: too new";
+		myAlbums[1] = "MDK: too new, sooooo hipster";
 		myAlbums[2] = "Skrillex: SOOOO Hipster";
 		myAlbums[3] = "Your Mother: on a scale of 1 to hipster, i cant even";
+		selfHipster.setHipsterAlbums(myAlbums);
 		
 		//hipster
 		// only one line
@@ -42,5 +53,9 @@ public class HipsterAppController
 		//ultra hipster
 		String [] weirdAlbums;
 		weirdAlbums =new String[] {"", "", "", "asdf"};
+	}
+	public Hipster getSelfHipster()
+	{
+		return selfHipster;
 	}
 }
