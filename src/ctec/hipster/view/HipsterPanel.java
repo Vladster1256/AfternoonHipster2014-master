@@ -22,7 +22,7 @@ public class HipsterPanel extends JPanel
 	
 	/**
 	 * This is the hipster panel method that we use to delcare variables equal to something and call methods
-	 * @param baseController is the main controller<hipsterappcontroller>
+	 * @param baseController is the main controller <hipsterappcontroller>
 	 */
 	public HipsterPanel(HipsterAppController baseController)
 	{

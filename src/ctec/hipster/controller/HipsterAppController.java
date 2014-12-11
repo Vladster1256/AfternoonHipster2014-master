@@ -54,8 +54,22 @@ public class HipsterAppController
 		String [] weirdAlbums;
 		weirdAlbums =new String[] {"", "", "", "asdf"};
 	}
+	
+	/**
+	 * getter for selfHipster
+	 * @return selfHipster
+	 */
 	public Hipster getSelfHipster()
 	{
 		return selfHipster;
+	}
+	
+	/**
+	 * This is the setter for Self Hipster
+	 * @param selfHipster is what we are setting
+	 */
+	public void setSelfHipster(Hipster selfHipster)
+	{
+		this.selfHipster = selfHipster;
 	}
 }
